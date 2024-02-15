@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- define a codificação dos caracteres a serem usados, essa é uma definição padrão -->
+        <meta charset="UTF-8">
+
+        <!-- define a escala e a largura da página, essa é uma definição padrão -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- nome da página (mostrado na aba) -->
+        <title>Jogo do Peixe</title>
+        
+        <!-- estilizando o corpo da página com CSS -->
+        <!-- display:flex define que o corpo da página pode se ajustar de forma flexível ao layout
+        disponibilizado -->
+        <!-- justify-content define em que regiao da página o conteúdo se posicionará. Neste caso, ele
+        se posicionará no centro dela -->
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+        </style>
+
+        <!-- conecta a página ao framework, ou seja, à biblioteca Phaser, para que o HTML seja capaz
+        de entender os camndos que foram utilizados no jogo. estác conectado no cabeçalho porque
+        precisa ser carregado antes de a página abrir -->
+        <script src="phaser.js"></script>
+    </head>
+
+
+    <body>
+        <!-- conecta o jogo à página, está conectado no corpo porque é o elemento a ser mostrado -->
+        <script src="jogo.js"></script>
+
+        <script>
+            var resposta = "Já havia programado antes, embora não tenha desenvolvido nada muito complexo ou que exigisse um alto domínio da programação. Como fazia tempo desde minha última experiência, esse contato ajudou muito no entendimento básico da área. Gostei muito do tutorial, é bem explicado em todas as partes e com ótimas referências";
+
+            console.log(resposta);
+        </script>
+    </body>
+
+</html>
